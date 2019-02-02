@@ -1,6 +1,6 @@
 # piping-server-load-balancer
 
-Load Balancer for Piping powered by [HAProxy](https://www.haproxy.org/)
+Load Balancer for Piping Server powered by [HAProxy](https://www.haproxy.org/)
 
 NOTE: This project has a problem. When an user quit by <kbd>ctrl</kbd>+<kbd>c</kbd> during sending, the server go wrong. The server can not response anything.
 
