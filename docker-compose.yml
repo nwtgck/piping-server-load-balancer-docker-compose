@@ -5,16 +5,21 @@ services:
     build: ./haproxy/.
     ports:
      - '8080:8080'
+    depends_on:
+     - piping1
+     - piping2
+     - piping3
+     - piping4
 
-  piping-1: &piping_settings
+  piping1: &piping_settings
     image: nwtgck/piping-server:v0.8.4
     command: --http-port=80
 
-  piping-2:
+  piping2:
     <<: *piping_settings
 
-  piping-3:
+  piping3:
     <<: *piping_settings
 
-  piping-4:
+  piping4:
     <<: *piping_settings
