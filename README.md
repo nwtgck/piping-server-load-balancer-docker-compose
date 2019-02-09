@@ -14,7 +14,7 @@ Access to for example,
 * <http://localhost:8080/foo>
 * ...
 
-Each path may be handled by different web servers, and the same path should be handled by the same server.
+Each path may be handled by different Piping Servers, and the same path should be handled by the same server.
 
 ## Base repository
 
