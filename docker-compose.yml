@@ -12,7 +12,7 @@ services:
      - piping4
 
   piping1: &piping_settings
-    image: nwtgck/piping-server:v0.8.4
+    image: nwtgck/piping-server:v0.9.1
     command: --http-port=80
 
   piping2:
