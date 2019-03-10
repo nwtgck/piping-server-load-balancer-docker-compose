@@ -1,4 +1,5 @@
 # piping-server-load-balancer
+[![CircleCI](https://circleci.com/gh/nwtgck/piping-server-load-balancer-docker-compose.svg?style=shield)](https://circleci.com/gh/nwtgck/piping-server-load-balancer-docker-compose)
 
 Load Balancer for Piping Server powered by [HAProxy](https://www.haproxy.org/)
 
