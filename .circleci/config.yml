@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  docker_compose_test:
+    machine: true
+    steps:
+      - checkout
+      # Check whether a working-test is successful or not
+      - run:
+          name: Working test
+          command: |
+            # Run server
+            docker-compose up -d
+            # Wait for servers running
+            sleep 3
+            # Woring-test
+            ./test/working_test.bash
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - docker_compose_test
