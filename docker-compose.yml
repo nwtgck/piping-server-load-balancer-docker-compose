@@ -2,7 +2,7 @@ version: '3'
 
 services:
   haproxy:
-    build: ./haproxy/.
+    image: haproxy:1.9.3-alpine
     ports:
      - '8080:8080'
     depends_on:
@@ -10,6 +10,8 @@ services:
      - piping2
      - piping3
      - piping4
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
 
   piping1: &piping_settings
     image: nwtgck/piping-server:v0.9.1
