@@ -2,7 +2,7 @@ version: '3'
 
 services:
   haproxy:
-    image: haproxy:1.9.8-alpine
+    image: haproxy:2.0-alpine
     ports:
      - '8080:8080'
     depends_on:
